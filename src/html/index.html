@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    button {
+        border: 0 none;
+        background-color: transparent;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        vertical-align: top;
+        text-align: left;
+    }
+    .dropdown .button-choose {
+        width: 200px;
+        height: 50px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+    }
+    .dropdown .list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 49px;
+        width: 200px;
+        border: 1px solid #ccc;
+    }
+    .dropdown .list.visible {
+        display: block;
+    }
+    .dropdown .list ul {
+        overflow: hidden;
+        position: relative;
+    }
+    .dropdown .list button {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+    }
+    .dropdown .list button:hover {
+        background-color: #eee;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button type="button" class="button button-choose" aria-haspopup="true"></button>
+        <div class="list hidden" aria-hidden="true" rule="menu">
+            <ul>
+                <li><button type="button" class="button button-item">Menu1</button></li>
+                <li><button type="button" class="button button-item">Menu2</button></li>
+                <li><button type="button" class="button button-item">Menu3</button></li>
+                <li><button type="button" class="button button-item">Menu4</button></li>
+                <li><button type="button" class="button button-item">Menu5</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

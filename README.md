@@ -1,25 +1,16 @@
-# Options
+# Dropdown.js
 
-#### defaultText
+> 드롭다운 UI 라이브러리
 
-type : `text`, default : `select`
+## Build Setup
 
-#### index
+``` bash
+# install dependencies
+npm install
 
-type : `number`, default : `1`
+# serve with hot reload at localhost:8080
+npm run dev
 
-#### callback
-
-type : `function`
-
-# Sample Usage
-
-```
-var dropdown = new Dropdown(document.querySelector('.dropdown'), {
-	defaultText : 'Selected',
-	index : 1,
-	callback : function() {
-		
-	}
-});
+# build for production with minification
+npm run build
 ```
